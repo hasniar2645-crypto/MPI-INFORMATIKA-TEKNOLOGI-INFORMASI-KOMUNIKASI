@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MPI Struktur Data</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">💻 MPI INFORMATIKA</div>
+  <div class="top-sub">Struktur Data • Media Pembelajaran Interaktif</div>
+</header>
+<div class="layout">
+<aside class="sidebar">
+  <div class="profile"><div class="avatar">🧠</div><strong>Jelajah Struktur Data</strong><small>Belajar • Simulasi • Evaluasi</small></div>
+  <nav id="nav">
+    <button class="nav active" data-page="home">🏠 Apersepsi</button>
+    <button class="nav" data-page="awal">📝 Asesmen Awal</button>
+    <button class="nav" data-page="materi">📚 Materi Pokok</button>
+    <button class="nav" data-page="simulasi">🧪 Simulasi</button>
+    <button class="nav" data-page="kuis">🎯 Kuis</button>
+    <button class="nav" data-page="akhir">🏆 Asesmen Akhir</button>
+    <button class="nav" data-page="refleksi">💭 Refleksi</button>
+  </nav>
+  <div class="side-note">Belajar sesuai kecepatanmu. Coba semua aktivitas!</div>
+</aside>
+<main>
+<section class="page show" id="home">
+  <div class="hero"><div><span class="eyebrow">SELAMAT DATANG</span><h1>Kenali pola di balik data!</h1>
+  <p>Struktur data membantu komputer menyimpan, mengatur, dan mengolah informasi secara teratur. Mari belajar lewat contoh sehari-hari dan simulasi sederhana.</p>
+  <button class="primary" data-go="awal">Mulai belajar →</button></div><div class="hero-art">🗂️<div class="floating">01 · 02 · 03</div></div></div>
+  <div class="cards three"><article class="card"><div class="emoji">🎯</div><h3>Tujuan belajar</h3><p>Menjelaskan konsep struktur data dan membedakan array, stack, queue, linked list, tree, serta graph secara sederhana.</p></article>
+  <article class="card"><div class="emoji">🧩</div><h3>Apersepsi</h3><p>Bayangkan rak buku, antrean kantin, dan tumpukan piring. Semuanya menyimpan benda dengan aturan yang berbeda.</p></article>
+  <article class="card"><div class="emoji">🚀</div><h3>Alur belajar</h3><p>Kenali pengetahuan awal, pelajari konsep, lakukan simulasi, lalu cek pemahaman melalui kuis dan refleksi.</p></article></div>
+  <div class="callout"><strong>Pertanyaan pemantik</strong><p>Jika kamu ingin menyimpan daftar nama siswa, mengatur antrean, atau membatalkan aksi terakhir di aplikasi, apakah cara penyimpanannya harus sama?</p></div>
+</section>
+<section class="page" id="awal">
+  <div class="section-head"><span class="eyebrow">LANGKAH 02</span><h1>Asesmen Awal</h1><p>Jawab pertanyaan berikut untuk mengetahui pemahaman awalmu. Hasil ini bukan nilai akhir.</p></div>
+  <form id="preForm" class="quizbox">
+    <div class="question"><h3>1. Manakah contoh data yang tersusun berurutan?</h3><label><input type="radio" name="p1" value="a"> Daftar nilai siswa dalam sebuah daftar</label><label><input type="radio" name="p1" value="b"> Suara dari speaker</label><label><input type="radio" name="p1" value="c"> Cahaya lampu</label></div>
+    <div class="question"><h3>2. Dalam antrean kantin, siapa yang biasanya dilayani lebih dahulu?</h3><label><input type="radio" name="p2" value="a"> Orang yang baru datang</label><label><input type="radio" name="p2" value="b"> Orang yang datang lebih dahulu</label><label><input type="radio" name="p2" value="c"> Orang yang paling tinggi</label></div>
+    <div class="question"><h3>3. Struktur data adalah...</h3><label><input type="radio" name="p3" value="a"> Cara mengatur dan menyimpan data</label><label><input type="radio" name="p3" value="b"> Perangkat untuk mencetak dokumen</label><label><input type="radio" name="p3" value="c"> Jenis kabel komputer</label></div>
+    <button class="primary" type="submit">Periksa jawaban</button><p id="preResult" class="result"></p>
+  </form>
+</section>
+<section class="page" id="materi">
+  <div class="section-head"><span class="eyebrow">LANGKAH 03</span><h1>Materi Pokok</h1><p>Struktur data adalah cara mengorganisasi data agar dapat digunakan secara efektif.</p></div>
+  <div class="cards two">
+    <article class="card"><div class="emoji">📋</div><h2>Array</h2><p>Kumpulan elemen sejenis yang disimpan berurutan dan diakses menggunakan indeks.</p><div class="array-demo"><span>0<br><b>12</b></span><span>1<br><b>18</b></span><span>2<br><b>15</b></span><span>3<br><b>20</b></span></div><small>Contoh: daftar nilai [12, 18, 15, 20]. Indeks sering dimulai dari 0.</small></article>
+    <article class="card"><div class="emoji">🥞</div><h2>Stack (tumpukan)</h2><p>Menggunakan prinsip <b>LIFO</b> (Last In, First Out): data terakhir masuk menjadi yang pertama keluar.</p><div class="stack-visual"><span>Data C · atas</span><span>Data B</span><span>Data A · bawah</span></div><small>Contoh: tumpukan piring atau fitur Undo.</small></article>
+    <article class="card"><div class="emoji">🚶</div><h2>Queue (antrean)</h2><p>Menggunakan prinsip <b>FIFO</b> (First In, First Out): data yang masuk lebih dahulu keluar lebih dahulu.</p><div class="queue-visual"><span>A</span><span>B</span><span>C</span><span class="arrow">→</span></div><small>Contoh: antrean cetak dokumen atau antrean kantin.</small></article>
+    <article class="card"><div class="emoji">🔗</div><h2>Linked List</h2><p>Kumpulan simpul (node). Setiap node menyimpan data dan tautan ke node berikutnya.</p><div class="linked-visual"><span>10</span> → <span>25</span> → <span>31</span> → null</div><small>Node tidak harus berada bersebelahan di memori.</small></article>
+    <article class="card"><div class="emoji">🌳</div><h2>Tree (pohon)</h2><p>Struktur bertingkat yang terdiri dari root, parent, child, dan leaf.</p><div class="tree-visual"><span class="root">A</span><div class="branches"><span>B</span><span>C</span></div><div class="branches"><span>D</span><span>E</span><span>F</span></div></div><small>Contoh: susunan folder dan subfolder.</small></article>
+    <article class="card"><div class="emoji">🕸️</div><h2>Graph (graf)</h2><p>Terdiri dari simpul (vertex) dan sisi (edge) yang menghubungkan simpul.</p><div class="graph-visual">●──●<br>╲ ╱ │<br> ●──●</div><small>Contoh: jaringan pertemanan atau peta jalan.</small></article>
+  </div>
+  <div class="callout"><strong>Ingat!</strong><p>Pilih struktur data berdasarkan kebutuhan. Array cocok untuk data berindeks, stack untuk pola LIFO, queue untuk FIFO, tree untuk hierarki, dan graph untuk hubungan yang saling terhubung.</p></div>
+</section>
+<section class="page" id="simulasi">
+  <div class="section-head"><span class="eyebrow">LANGKAH 04</span><h1>Laboratorium Simulasi</h1><p>Coba tambahkan dan keluarkan data. Perhatikan bagaimana aturan setiap struktur bekerja.</p></div>
+  <div class="sim-grid">
+    <article class="card"><h2>🥞 Simulasi Stack</h2><p>Data terakhir masuk akan keluar lebih dahulu.</p><div id="stackView" class="sim-items"></div><div class="controls"><input id="stackInput" maxlength="12" placeholder="Masukkan data"><button class="primary" id="push">Push +</button><button class="secondary" id="pop">Pop −</button></div><p id="stackMsg" class="hint">Stack masih kosong.</p></article>
+    <article class="card"><h2>🚶 Simulasi Queue</h2><p>Data pertama masuk akan keluar lebih dahulu.</p><div id="queueView" class="sim-items"></div><div class="controls"><input id="queueInput" maxlength="12" placeholder="Masukkan data"><button class="primary" id="enqueue">Enqueue +</button><button class="secondary" id="dequeue">Dequeue −</button></div><p id="queueMsg" class="hint">Antrean masih kosong.</p></article>
+  </div>
+  <div class="callout"><strong>Tantangan</strong><p>Masukkan A, lalu B, lalu C ke kedua simulasi. Apa perbedaan data yang keluar pertama kali?</p></div>
+</section>
+<section class="page" id="kuis">
+  <div class="section-head"><span class="eyebrow">LANGKAH 05</span><h1>Kuis Pemahaman</h1><p>Pilih satu jawaban paling tepat untuk setiap pertanyaan.</p></div>
+  <form id="quizForm" class="quizbox">
+    <div class="question"><h3>1. Prinsip yang digunakan oleh stack adalah...</h3><label><input type="radio" name="q1" value="a"> FIFO</label><label><input type="radio" name="q1" value="b"> LIFO</label><label><input type="radio" name="q1" value="c"> Acak</label></div>
+    <div class="question"><h3>2. Struktur yang cocok untuk antrean printer adalah...</h3><label><input type="radio" name="q2" value="a"> Queue</label><label><input type="radio" name="q2" value="b"> Tree</label><label><input type="radio" name="q2" value="c"> Stack</label></div>
+    <div class="question"><h3>3. Elemen array biasanya diakses menggunakan...</h3><label><input type="radio" name="q3" value="a"> Indeks</label><label><input type="radio" name="q3" value="b"> Warna</label><label><input type="radio" name="q3" value="c"> Suara</label></div>
+    <div class="question"><h3>4. Struktur data yang menggambarkan hubungan hierarki adalah...</h3><label><input type="radio" name="q4" value="a"> Queue</label><label><input type="radio" name="q4" value="b"> Array</label><label><input type="radio" name="q4" value="c"> Tree</label></div>
+    <div class="question"><h3>5. Simpul dan sisi merupakan komponen utama...</h3><label><input type="radio" name="q5" value="a"> Stack</label><label><input type="radio" name="q5" value="b"> Graph</label><label><input type="radio" name="q5" value="c"> Array</label></div>
+    <button class="primary" type="submit">Nilai kuis</button><p id="quizResult" class="result"></p>
+  </form>
+</section>
+<section class="page" id="akhir">
+  <div class="section-head"><span class="eyebrow">LANGKAH 06</span><h1>Asesmen Akhir</h1><p>Gunakan pemahamanmu untuk menyelesaikan situasi berikut.</p></div>
+  <form id="finalForm" class="quizbox">
+    <div class="question"><h3>1. Aplikasi menyediakan fitur Undo yang membatalkan tindakan terakhir. Struktur yang paling sesuai adalah...</h3><label><input type="radio" name="f1" value="a"> Queue</label><label><input type="radio" name="f1" value="b"> Stack</label><label><input type="radio" name="f1" value="c"> Graph</label></div>
+    <div class="question"><h3>2. Data diproses sesuai urutan kedatangan. Struktur yang sesuai adalah...</h3><label><input type="radio" name="f2" value="a"> Queue</label><label><input type="radio" name="f2" value="b"> Tree</label><label><input type="radio" name="f2" value="c"> Stack</label></div>
+    <div class="question"><h3>3. Folder memiliki subfolder dan berjenjang. Model yang tepat adalah...</h3><label><input type="radio" name="f3" value="a"> Array</label><label><input type="radio" name="f3" value="b"> Linked List</label><label><input type="radio" name="f3" value="c"> Tree</label></div>
+    <div class="question"><h3>4. Apa perbedaan utama array dan linked list?</h3><label><input type="radio" name="f4" value="a"> Array diakses dengan indeks, linked list menghubungkan node melalui tautan</label><label><input type="radio" name="f4" value="b"> Array hanya menyimpan huruf</label><label><input type="radio" name="f4" value="c"> Keduanya selalu sama</label></div>
+    <div class="question"><h3>5. Jaringan jalan yang menghubungkan banyak lokasi dapat dimodelkan sebagai...</h3><label><input type="radio" name="f5" value="a"> Stack</label><label><input type="radio" name="f5" value="b"> Graph</label><label><input type="radio" name="f5" value="c"> Queue</label></div>
+    <button class="primary" type="submit">Lihat hasil asesmen</button><p id="finalResult" class="result"></p>
+  </form>
+</section>
+<section class="page" id="refleksi">
+  <div class="section-head"><span class="eyebrow">LANGKAH 07</span><h1>Refleksi Diri</h1><p>Renungkan proses belajarmu. Jawabanmu dapat membantu menentukan bagian yang perlu dipelajari kembali.</p></div>
+  <div class="card reflection">
+    <h2>Bagaimana pengalaman belajarmu?</h2>
+    <label class="reflect-label">1. Materi yang paling saya pahami</label><select id="understood"><option value="">Pilih materi</option><option>Array</option><option>Stack</option><option>Queue</option><option>Linked List</option><option>Tree</option><option>Graph</option></select>
+    <label class="reflect-label">2. Tingkat kepercayaan diri saya</label><div class="confidence"><label><input type="radio" name="confidence" value="1"> 😕 Perlu bantuan</label><label><input type="radio" name="confidence" value="2"> 🙂 Cukup paham</label><label><input type="radio" name="confidence" value="3"> 😄 Sangat paham</label></div>
+    <label class="reflect-label">3. Hal yang masih ingin saya tanyakan</label><textarea id="reflectionText" rows="4" placeholder="Tuliskan refleksimu di sini..."></textarea>
+    <button class="primary" id="saveReflection">Simpan refleksi</button><p id="reflectionResult" class="result"></p>
+  </div>
+  <div class="callout"><strong>Pesan penutup</strong><p>Struktur data bukan sekadar istilah. Struktur data adalah cara memilih aturan penyimpanan yang membantu menyelesaikan masalah. Teruslah mencoba dan bertanya!</p><button class="secondary" data-go="home">↺ Kembali ke awal</button></div>
+</section>
+<footer>MPI Struktur Data • Materi pengantar Informatika • Berjalan secara offline di browser</footer>
+</main></div>
+<script src="app.js"></script>
+</body></html>
